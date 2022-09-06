@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import MobxUsersList from "./components/UsersList";
+import ReduxUsersList from "./components/UsersListRedux";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="max-w-5xl m-auto text-center flex justify-center">
+          <ReduxUsersList/>
+          <br/>
+          <MobxUsersList/>
+      </div>
   );
 }
-
-export default App;
